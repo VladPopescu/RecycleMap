@@ -1,6 +1,4 @@
 package com.vpopescu.endava.recyclemap;
-
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,11 +15,10 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private ViewPager viewPager;
-    private PagerAdapter pagerAdapter;
     private Button slidePageButton;
-    private int dotsCount=3;
+    private final int dotsCount=3;
     private ImageView[] dots;
-    LinearLayout linearLayout;
+    private LinearLayout linearLayout;
 
 
     @Override
@@ -54,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
         slidePageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                drawPageSelectionIndicators(viewPager.getNextFocusRightId());
+                viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
+                drawPageSelectionIndicators(viewPager.getCurrentItem());
             }
         });
 
@@ -64,9 +62,9 @@ public class MainActivity extends AppCompatActivity {
     private List<DataObject> dataSource(){
         List<DataObject> data = new ArrayList<DataObject>();
 
-        data.add(new DataObject(R.mipmap.find_recycle_center, "Find recycle centers!", "SADa sjajhjhja jashf vashashfas ashsa hsa hhs aheja"));
-        data.add(new DataObject(R.mipmap.collect_waste_from_home, "Collect the waste from my place!","ANVD aASVa AHSFASHJFSA ASHAASA sajhkasfba jaksfbakhsfkafjala"));
-        data.add(new DataObject(R.mipmap.add_waste_center, "Add new recycle centers!", "Desrahkfabd sajfksbh bha sh hasab bhkhhkakhkha sadasgae"));
+        data.add(new DataObject(R.mipmap.find_recycle_center, "Find recycle centers!", "Lorem ipsum dolor sit amet, consectetur adipiscingelit. Ut pretium pretium tempor."));
+        data.add(new DataObject(R.mipmap.collect_waste_from_home, "Collect the waste from my place!","Lorem ipsum dolor sit amet, consectetur adipiscingelit. Ut pretium pretium tempor."));
+        data.add(new DataObject(R.mipmap.add_waste_center, "Add new recycle centers!", "Lorem ipsum dolor sit amet, consectetur adipiscingelit. Ut pretium pretium tempor."));
 
         return data;
     }
