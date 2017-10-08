@@ -1,4 +1,4 @@
-package com.vpopescu.endava.recyclemap;
+package com.vpopescu.endava.recyclemap.model;
 
 public class DataObject {
     private int imageId;

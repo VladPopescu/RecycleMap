@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.vpopescu.endava.recyclemap.adapter.CustomPageAdapter;
+import com.vpopescu.endava.recyclemap.model.DataObject;
+
 import java.util.ArrayList;
 import java.util.List;
 

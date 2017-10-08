@@ -1,4 +1,4 @@
-package com.vpopescu.endava.recyclemap;
+package com.vpopescu.endava.recyclemap.adapter;
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
@@ -6,6 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.vpopescu.endava.recyclemap.R;
+import com.vpopescu.endava.recyclemap.model.DataObject;
+
 import java.util.List;
 
 
