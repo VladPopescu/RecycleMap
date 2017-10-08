@@ -23,13 +23,14 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/image_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp" />
 
     <TextView
         android:id="@+id/image_text"
         android:layout_width="270dp"
-        android:layout_height="70dp"
+        android:layout_height="80dp"
         android:text="TextView will be used for entering info regardibg application for clients. This text is just regular non-sense and if you are reading it.. well then, good for you"
         android:layout_marginBottom="120dp"
         android:textSize="16sp"
